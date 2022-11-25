@@ -1,6 +1,6 @@
-package Controladores;
-import Modelos.Permiso;
-import Repositorios.RepositorioPermiso;
+package ProyectoRegistraduria.seguridad.Controladores;
+import ProyectoRegistraduria.seguridad.Modelos.Permiso;
+import ProyectoRegistraduria.seguridad.Repositorios.RepositorioPermiso;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -25,8 +25,7 @@ public class ControladorPermiso {
 
     @GetMapping("{id}")
     public Permiso show(@PathVariable String id){
-        Permiso permisoActual= miRepositorioPermiso.findById(id)
-                .orElse(null);
+        Permiso permisoActual = miRepositorioPermiso.findById(id).orElse(null);
         return permisoActual;
     }
     @PutMapping("{id}")

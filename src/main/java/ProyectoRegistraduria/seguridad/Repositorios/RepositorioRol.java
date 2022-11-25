@@ -1,5 +1,5 @@
-package Repositorios;
-import Modelos.Rol;
+package ProyectoRegistraduria.seguridad.Repositorios;
+import ProyectoRegistraduria.seguridad.Modelos.Rol;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 

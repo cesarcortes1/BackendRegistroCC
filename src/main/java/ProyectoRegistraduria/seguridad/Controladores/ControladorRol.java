@@ -1,6 +1,6 @@
-package Controladores;
-import Modelos.Rol;
-import Repositorios.RepositorioRol;
+package ProyectoRegistraduria.seguridad.Controladores;
+import ProyectoRegistraduria.seguridad.Modelos.Rol;
+import ProyectoRegistraduria.seguridad.Repositorios.RepositorioRol;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
